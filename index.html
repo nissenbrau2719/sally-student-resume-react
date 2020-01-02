@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sally Student Resume</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="application-root"></div>
+
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+  <script type="text/babel">
+  
+  function App(props) {
+    return (
+      <div>
+        <header>
+          <h1>{props.name}</h1>
+          <p className="title">Full Stack Web Developer</p> 
+          <hr />
+        </header>
+
+        <main>
+        <section id="contacts">
+          <h2>CONTACTS</h2>
+          <div className="container">
+            <img id="headshot" src="http://www.minneapolisheadshots.com/gallery/main/professional-woman1.jpg" alt="Sally Student full stack developer headshot" width="200px" />
+            <address>
+              Sally S. Student<br/>
+              1425 N. Washington St. #101<br/>
+              Denver, CO 80203 
+            </address>
+            <a target="_blank" href="mailto:sally.student@gmail.com">Sally.Student@gmail.com</a><br/>
+            <a target="_blank" href="tel:+13115552368">(311) 555-2368</a>
+          </div>
+        </section>
+
+        <section>
+          <h2>EXPERIENCE</h2>
+          <div className="container">
+            <h3>Full Stack Web Developer</h3>
+            <h4 className="employment">IgnitionOne - 2017 to Present</h4>
+            <ul>
+              <li>
+                Work with other departments, stakeholders, and customers on software development, improvements, internal tools, and implementation issues
+              </li>
+              <li>
+                Have fun: programming is awesome and IgnitionOne provides a casual working environment where technology enthusiasts can strive
+              </li>
+              <li>
+                Leading other development team members to understand the business processes to develop best-of-breed transactional web systems
+              </li>
+              <li>
+                Familiarity with JavaScript frameworks and libraries that support efficient web development (beyond jQuery) - e.g. React, Backbone etc
+              </li>
+              <li>
+                Participate in specification, design, implementation, evangelism and support of the product, as well as improve existing features and product performance
+              </li>
+              <li>
+                Developing management layer and services API for the AppVolumes product
+              </li>
+              <li>
+                Develop and maintain features on Cloudera’s support portal and areas of cloudera.com managed by the support organization
+              </li>
+            </ul>
+
+            <h3>Full Stack Web Developer</h3>
+            <h4 className="employment">Candidly - 2014 to 2017</h4>
+            <ul>
+              <li>
+                Worked on the development, enhancements and operation of web-based software as a talented full-stack web developer within a dedicated, product-based team
+              </li>
+              <li>
+                Developed complete regression and unit test cases to make sure components are tested rigorously in an automated fashion
+              </li>
+              <li>
+                Worked collaboratively to tackle complex problems and make important decisions
+              </li>
+              <li>
+                Worked with AngularJS and Backbone.js front-end web application frameworks
+              </li>
+              <li>
+                Provided feedback on and contribute to long-term digital strategy
+              </li>
+              <li>
+                Worked with Bootstrap and Foundation front-end presentation frameworks
+              </li>
+              <li>
+                Worked with Express back-end Node.js web application framework
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>EDUCATION</h2>
+          <div className="container">
+            <h3>Bachelor's Degree in Computer Science</h3>
+            <h4 className="employment">Adelphi University - 2009 to 2013</h4>
+          </div>
+        </section>
+
+        <section>
+          <h2>SKILLS</h2>
+          <div class="container">
+            <ul>
+              <li>
+                Strong knowledge of object-oriented programming and software design principles
+              </li>
+              <li>
+                Develop products of the highest quality through strict attention to visual and interaction details
+              </li>
+              <li>
+                Knowledge of HTTP standards, API best practices, REST, web security and authentication, basics of building scalable solutions
+              </li>
+              <li>
+                Creativity, knowledge of basic UI design principles, and a constant focus on user experience to build elegant interfaces
+              </li>
+              <li>
+                Solid knowledge and hands on experience with a variety of Amazon Web Services product offerings (EC2, S3, Load Balancing, CloudSearch, ElastiCache)
+              </li>
+              <li>
+                Demonstrate good verbal and written communication skills and maintain regular, timely, accurate, and professional communication with the team
+              </li>
+            </ul>
+          </div>
+        </section>
+        </main>
+      </div>
+    );
+  }
+
+  ReactDOM.render(
+    <App 
+      name='Sally Student'
+    />,
+    document.querySelector('#application-root')
+  );
+</script>
+</body>
+</html>
